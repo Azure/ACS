@@ -7,17 +7,18 @@ Contents:
 
 ## Features Status
 
-| Feature | K8s 1.3.x | K8s 1.4.6 | K8s 1.5.1 | PRs |
-| ------- | --------- | --------- | --------- | --- |
-| Native Pod Networking                        |   | ✓ | ✓ | [#28821](https://github.com/kubernetes/kubernetes/pull/28821) |
-| Automatic L4 Load Balancers                  |   | ✓ | ✓ | [#28821](https://github.com/kubernetes/kubernetes/pull/28821), [#36256](https://github.com/kubernetes/kubernetes/pull/36256) |
-| Source IP White-listing w/ L4 Load Balancers |   |   | ✓ | [#36696](https://github.com/kubernetes/kubernetes/pull/36696) |
-| Source IP Preservation w/ L4 Load Balancers  |   |   | ✓ | [#36557](https://github.com/kubernetes/kubernetes/pull/36557) |
-| Persistent VHD Disks (AzureDisk)             |   | ✓ | ✓ | [#29836](https://github.com/kubernetes/kubernetes/pull/29836) |
-| Dynamically Provisioned Persistent Disks     |   |   | ✓ | [#30091](https://github.com/kubernetes/kubernetes/pull/30091) |
+| Feature | K8s 1.3.x | K8s 1.4.6 | K8s 1.5.1 | K8s 1.6.6 | PRs |
+| ------- | --------- | --------- | --------- | --------- | --- |
+| Native Pod Networking                        |   | ✓ | ✓ | ✓ | [#28821](https://github.com/kubernetes/kubernetes/pull/28821) |
+| Automatic L4 Load Balancers                  |   | ✓ | ✓ | ✓ | [#28821](https://github.com/kubernetes/kubernetes/pull/28821), [#36256](https://github.com/kubernetes/kubernetes/pull/36256) |
+| Source IP White-listing w/ L4 Load Balancers |   |   | ✓ | ✓ | [#36696](https://github.com/kubernetes/kubernetes/pull/36696) |
+| Source IP Preservation w/ L4 Load Balancers  |   |   | ✓ | ✓ | [#36557](https://github.com/kubernetes/kubernetes/pull/36557) |
+| Persistent VHD Disks (AzureDisk)             |   | ✓ | ✓ | ✓ | [#29836](https://github.com/kubernetes/kubernetes/pull/29836) |
+| Dynamically Provisioned Persistent Disks     |   |   | ✓ | ✓ | [#30091](https://github.com/kubernetes/kubernetes/pull/30091) |
 
  * Kubernetes 1.4 was released on September 26, 2016.
  * Kubernetes 1.5 was released on December 12, 2016.
+ * Kubernetes 1.6 was released on March 22, 2017.
 
 ## Recommended Cluster Deployment Strategy
 
