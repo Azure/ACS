@@ -1,0 +1,39 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "masterDnsNamePrefix": {
+      "value": "anhowe0627sc"
+    },
+    "agentDnsNamePrefix": {
+      "value": "anhowe0627sc"
+    },
+    "agentCount": {
+      "value": 2
+    },
+    "agentVMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "linuxAdminUsername": {
+      "value": "azureuser"
+    },
+    "orchestratorType": {
+      "value": "Kubernetes"
+    },
+    "masterCount": {
+      "value": 1
+    },
+    "masterVMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "sshRSAPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8fhkh3jpHUQsrUIezFB5k4Rq9giJM8G1Cr0u2IRMiqG++nat5hbOr3gODpTA0h11q9bzb6nJtK7NtDzIHx+w3YNIVpcTGLiUEsfUbY53IHg7Nl/p3/gkST3g0R6BSL7Hg45SfyvpH7kwY30MoVHG/6P3go4SKlYoHXlgaaNr3fMwUTIeE9ofvyS3fcr6xxlsoB6luKuEs50h0NGsE4QEnbfSY4Yd/C1ucc3mEw+QFXBIsENHfHfZYrLNHm2L8MXYVmAH8k//5sFs4Migln9GiUgEQUT6uOjowsZyXBbXwfT11og+syPkAq4eqjiC76r0w6faVihdBYVoc/UcyupgH azureuser@linuxvm"
+    },
+    "servicePrincipalClientId": {
+      "value": "c56fa0bc-bed3-4e69-a0a5-4dfee5cb174c"
+    },
+    "servicePrincipalClientSecret": {
+      "value": "b18356c4-34f1-4b32-81c6-b8a64048c690"
+    }
+  }
+}
