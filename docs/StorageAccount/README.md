@@ -4,7 +4,7 @@ ACS API version `2017-07-01` includes support for the `StorageAccount` Azure res
 
 - Kubernetes
 - DCOS
-- Docker Swarm //TODO is this true?
+- Docker Swarm
 
 ### How to engage StorageAccount features
 
