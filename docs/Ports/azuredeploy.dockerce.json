@@ -87,17 +87,6 @@
       },
       "type": "securestring",
       "defaultValue": "n/a"
-    },
-    "osType": {
-      "type": "string",
-      "defaultValue": "Linux",
-      "allowedValues": [
-        "Linux",
-        "Windows"
-      ],
-      "metadata": {
-        "description": "The type of operating system."
-      }
     }
   },
   "variables": {
@@ -114,7 +103,7 @@
     "servicePrincipalClientSecret": "[parameters('servicePrincipalClientSecret')]",
     "useServicePrincipalDictionary": {
       "DCOS": 0,
-      "Swarm": 0,
+      "DockerCE": 0,
       "Kubernetes": 1
     },
     "useServicePrincipal": "[variables('useServicePrincipalDictionary')[variables('orchestratorType')]]",
@@ -124,8 +113,7 @@
         "ClientId": "[parameters('servicePrincipalClientId')]",
         "Secret": "[parameters('servicePrincipalClientSecret')]"
       }
-    ],
-    "osType": "[parameters('osType')]"
+    ]
   },
   "resources": [
     {
@@ -144,11 +132,10 @@
         },
         "agentPoolProfiles": [
           {
-            "name": "agentpublic",
-            "count": 1,
+            "name": "agentpools",
+            "count": "[variables('agentCount')]",
             "vmSize": "[variables('agentVMSize')]",
             "dnsPrefix": "[variables('agentsEndpointDNSNamePrefix')]",
-            "osType": "[variables('osType')]",
             "ports": [
               443,
               8080,
@@ -157,12 +144,6 @@
               8083,
               8084
             ]
-          },
-          {
-            "name": "agentprivate",
-            "count": "[variables('agentCount')]",
-            "vmSize": "[variables('agentVMSize')]",
-            "osType": "[variables('osType')]"
           }
         ]        ,
         "linuxProfile": {
