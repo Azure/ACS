@@ -5,6 +5,7 @@ With the provided sample ARM templates and parameters, you could using az cli to
 ```
 az group deployment create -g <your resource group> --template-file azuredeploy.dcos.json --parameters azuredeploy.params.dcos.json
 ``` 
+Note, `<your resource group>` need to be in either `ukwest` or `uksouth` regions. Other regions don't support the new version yet.
 
 Or you could simply click this
 
