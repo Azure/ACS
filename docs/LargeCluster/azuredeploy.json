@@ -122,7 +122,7 @@
       "apiVersion": "2017-07-01",
       "type": "Microsoft.ContainerService/containerServices",
       "location": "[resourceGroup().location]",
-      "name":"container-service",
+      "name":"containerservice",
       "properties": {
         "orchestratorProfile": {
           "orchestratorType": "[variables('orchestratorType')]"
@@ -166,15 +166,15 @@
   "outputs": {
     "masterFQDN": {
       "type": "string",
-      "value": "[reference('Microsoft.ContainerService/containerServices/container-service').masterProfile.fqdn]"
+      "value": "[reference('Microsoft.ContainerService/containerServices/containerservice').masterProfile.fqdn]"
     },
     "sshMaster0": {
       "type": "string",
-      "value": "[concat('ssh ', variables('adminUsername'), '@', reference('Microsoft.ContainerService/containerServices/container-service').masterProfile.fqdn, ' -A -p 2200')]"
+      "value": "[concat('ssh ', variables('adminUsername'), '@', reference('Microsoft.ContainerService/containerServices/containerservice').masterProfile.fqdn, ' -A -p 2200')]"
     },
     "agentFQDN": {
       "type": "string",
-      "value": "[reference('Microsoft.ContainerService/containerServices/container-service').agentPoolProfiles[0].fqdn]"
+      "value": "[reference('Microsoft.ContainerService/containerServices/containerservice').agentPoolProfiles[0].fqdn]"
     }
   }
 }
