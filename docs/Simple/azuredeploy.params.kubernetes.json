@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "masterDnsNamePrefix": {
-      "value": "acs-k8s"
+      "value": "GEN-UNIQUE"
     },
     "agentCount": {
       "value": 2

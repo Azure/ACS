@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "masterDnsNamePrefix": {
-      "value": "acs-dcos"
+      "value": "GEN-UNIQUE"
     },
     "agentDnsNamePrefix": {
-      "value": "acs-dcos-agent"
+      "value": "GEN-UNIQUE"
     },
     "agentCount": {
       "value": 2
