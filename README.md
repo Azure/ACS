@@ -1,15 +1,18 @@
-# Azure Container Service
+# Microsoft Azure Container Service
 
 ## Overview
 
 This repository will serve as a home for tracking [known issues](https://github.com/Azure/ACS/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20label%3Aknown-issue)
 regarding the [Azure Container Service](https://azure.microsoft.com/en-us/services/container-service/).
 
-This will also host auxiliary information:
-* [The State of Kubernetes on Azure](kubernetes-status.md)
+This will also host a document discussing the [state of Kubernetes on Azure](kubernetes-status.md)
 
 Please visit the [ACS-Engine](https://github.com/Azure/ACS-Engine) repository for issues or
 questions regarding the use of the open-source core of ACS.
+
+## Announcements
+
+* **June 28, 2017** -  [ACS UK Public Preview w/ Extended Features](announcements/2017-06-28-acs-uk-public-preview.md)
 
 ## Code of conduct
 
