@@ -134,19 +134,17 @@
             "name": "agentpool1",
             "count": "[variables('agentCount')]",
             "vmSize": "[variables('agentVMSize')]",
-            "dnsPrefix": "[cat(variables('agentsEndpointDNSNamePrefix'),'1')]"
+            "dnsPrefix": "[variables('agentsEndpointDNSNamePrefix')]"
           },
           {
             "name": "agentpool2",
             "count": "[variables('agentCount')]",
-            "vmSize": "[variables('agentVMSize')]",
-            "dnsPrefix": "[cat(variables('agentsEndpointDNSNamePrefix'),'1')]"
+            "vmSize": "[variables('agentVMSize')]"
           },
           {
             "name": "agentpool3",
             "count": "[variables('agentCount')]",
-            "vmSize": "[variables('agentVMSize')]",
-            "dnsPrefix": "[cat(variables('agentsEndpointDNSNamePrefix'),'1')]"
+            "vmSize": "[variables('agentVMSize')]"
           }
         ],
         "linuxProfile": {

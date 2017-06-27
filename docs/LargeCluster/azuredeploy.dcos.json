@@ -98,7 +98,6 @@
     "mastersEndpointDNSNamePrefix":"[parameters('masterDnsNamePrefix')]",
     "orchestratorType":"[parameters('orchestratorType')]",
     "sshRSAPublicKey":"[parameters('sshRSAPublicKey')]",
-    "enableDiagnostics":"[parameters('enableDiagnostics')]",
     "servicePrincipalClientId": "[parameters('servicePrincipalClientId')]",
     "servicePrincipalClientSecret": "[parameters('servicePrincipalClientSecret')]",
     "useServicePrincipalDictionary": {
@@ -136,7 +135,6 @@
             "count": 1,
             "vmSize": "[variables('agentVMSize')]",
             "dnsPrefix": "[variables('agentsEndpointDNSNamePrefix')]",
-            "osType": "[variables('osType')]",
             "ports": [
               443,
               8080

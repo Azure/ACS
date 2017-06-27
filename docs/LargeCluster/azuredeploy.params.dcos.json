@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "masterDnsNamePrefix": {
-      "value": "anhowe0626lcaa"
+      "value": "GEN-UNIQUE"
     },
     "agentDnsNamePrefix": {
-      "value": "appanhowe0626lcaa"
+      "value": "GEN-UNIQUE"
     },
     "agentCount": {
-      "value": 1
+      "value": 15
     },
     "agentVMSize": {
       "value": "Standard_D2_v2"

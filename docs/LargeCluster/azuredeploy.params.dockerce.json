@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "masterDnsNamePrefix": {
-      "value": "anhowe0626lcb"
+      "value": "GEN-UNIQUE"
     },
     "agentDnsNamePrefix": {
-      "value": "appanhowe0626lcb"
+      "value": "GEN-UNIQUE"
     },
     "agentCount": {
-      "value": 1
+      "value": 15
     },
     "agentVMSize": {
-      "value": "Standard_D2"
+      "value": "Standard_D2_v2"
     },
     "linuxAdminUsername": {
       "value": "azureuser"
