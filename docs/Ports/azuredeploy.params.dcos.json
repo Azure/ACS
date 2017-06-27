@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "masterDnsNamePrefix": {
-      "value": "anhowe0626pa"
+      "value": "jiren0627pm"
     },
     "agentDnsNamePrefix": {
-      "value": "appanhowe0626pa"
+      "value": "jiren0627pa"
     },
     "agentCount": {
       "value": 2
