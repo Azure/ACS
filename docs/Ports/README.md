@@ -4,11 +4,16 @@
 - they must be specified with a agentDnsNamePrefix
 - range is 1 <= x <= 65535
 
-In this sample templates we specify the public agent pool's ports like this
+In sample templates we specify the public agent pool's ports like this
 ![nsg image](resources/ports_publicagent_definition.png)
 
+## Before using sample template and parameters
+- Replace GEN-UNIQUE and GEN-UNIQUE-2 with different unique strings
+- Replace GEN-SSH-PUB-KEY with valid SSH public key
+
+## Deploy using sample template and parameters
 With the provided sample ARM templates and parameters, 
-- you could using az cli to deploy like this
+- Using [az cli](https://github.com/Azure/azure-cli) to deploy
     ```
     az group deployment create -g <your resource group> --template-file azuredeploy.dcos.json --parameters azuredeploy.params.dcos.json
     ``` 
@@ -18,5 +23,6 @@ With the provided sample ARM templates and parameters,
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
-After deployment finished, you should be able to check the public agent pool's nsg rules.
+## After deployment
+You should be able to check the public agent pool's nsg rules, in [azure portal](https://portal.azure.com/)
 ![nsg image](resources/ports_publicagent_nsg.png)
