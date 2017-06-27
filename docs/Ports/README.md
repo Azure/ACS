@@ -7,12 +7,6 @@ az group deployment create -g <your resource group> --template-file azuredeploy.
 ``` 
 Note, `<your resource group>` need to be in either `ukwest` or `uksouth` regions. Other regions don't support the new version yet.
 
-Or you could simply click this
-
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2FAzure%2Facs%2Fmaster%2Fdocs%2FPorts%2Fazuredeploy.dcos.json" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
-
 In this sample templates we specify the public agent pool's ports like this
 ![nsg image](resources/ports_publicagent_definition.png)
 
