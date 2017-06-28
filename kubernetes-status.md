@@ -24,7 +24,7 @@ Contents:
 
 ### [Azure Container Service](https://azure.microsoft.com/en-us/services/container-service/)
   * Azure Container Service supports DC/OS, Swarm and Kubernetes (in preview).
-  * Walkthrough: [Kubernetes on Azure Container Service](https://docs.microsoft.com/en-us/azure/container-service/container-service-kubernetes-walkthrough)
+  * Walkthrough: [Kubernetes on Azure Container Service](https://docs.microsoft.com/azure/container-service/container-service-kubernetes-walkthrough)
   * More Information: [Kubernetes Blog: Bringing Kubernetes Support to Azure](http://blog.kubernetes.io/2016/11/bringing-kubernetes-support-to-azure.html).
 
 ### [ACS-Engine](https://github.com/Azure/ACS-Engine)
@@ -39,7 +39,7 @@ These are potential projects that anyone could pick up to help Kubernetes on Azu
 1. **Azure Ingress Controller**
   * **Status**: [Work In Progress](https://github.com/JargoonPard/contrib/commits/azureingress)
   * **Description**:
-    * Build an `azure-ingress-controller` using [Azure's ApplicationGateways](https://azure.microsoft.com/en-us/services/application-gateway/)
+    * Build an `azure-ingress-controller` using [Azure's ApplicationGateways](https://azure.microsoft.com/services/application-gateway/)
 2. **Azure Cluster-Autoscale Backend**
   * **Status**: Not started
   * **Description**:

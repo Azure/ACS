@@ -189,7 +189,7 @@ The allowed sizes are obtained from [script using az cli](https://github.com/Azu
 "Standard_NV24",
 "Standard_NV6"
 
-# Example template and parameter files for all three orchestrators are provided here
+# Example template and parameter files for all three orchestrators
 ## DCOS
 ### [azuredeploy.dcos.json](./azuredeploy.dcos.json)
 ### [azuredeploy.params.dcos.json](./azuredeploy.params.dcos.json)

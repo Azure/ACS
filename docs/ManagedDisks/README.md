@@ -1,6 +1,6 @@
 # Azure Container Service - Managed Disks
 
-You can now create clusters with all managed disks, meaning the whole cluster has encryption at rest by default, as can be [read here](https://azure.microsoft.com/en-us/blog/azure-managed-disks-sse/?v=17.23h)
+You can now create clusters with all managed disks, meaning the whole cluster has encryption at rest by default, as can be [read here](https://azure.microsoft.com/blog/azure-managed-disks-sse/?v=17.23h)
 
 All orchestrators clusters  in version “vlabs” and v20170701 use managed disks by default on all masters and agents with the exception of K8S agents.  If you don’t need Kubernetes persistent volumes, you can even override K8S agents to use managed disks [example here](https://github.com/Azure/acs-engine/blob/master/examples/disks-managed/kubernetes-preAttachedDisks-vmas.json)
 
