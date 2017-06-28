@@ -142,7 +142,7 @@
         "Kubernetes",
         "DCOS",
         "Swarm",
-        "SwarmMode"
+        "DockerCE"
       ],
       "metadata": {
         "description": "The type of orchestrator used to manage the applications on the cluster."
