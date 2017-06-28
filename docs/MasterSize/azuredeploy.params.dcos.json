@@ -17,14 +17,8 @@
     "linuxAdminUsername": {
       "value": "azureuser"
     },
-    "windowsAgentAdminUsername": {
-      "value": "azureuser"
-    },
-    "windowsAgentAdminPassword":{
-        "value": "password1234$"
-    },
     "orchestratorType": {
-      "value": "Kubernetes"
+      "value": "DCOS"
     },
     "masterCount": {
       "value": 1
@@ -34,12 +28,6 @@
     },
     "sshRSAPublicKey": {
       "value": "GEN-SSH-PUB-KEY"
-    },
-    "servicePrincipalClientId": {
-      "value": "myServicePrincipalClientID"
-    },
-    "servicePrincipalClientSecret": {
-      "value": "myServicePrincipalClientSecret"
     },
     "osType": {
         "value": "Linux"
