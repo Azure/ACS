@@ -2,7 +2,9 @@
 
 ## masterVMSize
 
-Azure Container Service API version `2017-07-01` includes support for VMSize under MasterProfile. masterVMSize is the allowed size of VM of master in Azure depending on the orchestrator type. In sample templates we specify the master vmSize like this ![nsg image](resources/masterprofile.png)
+Azure Container Service API version `2017-07-01` includes support for VMSize under MasterProfile. masterVMSize is the allowed size of VM of master in Azure depending on the orchestrator type. In sample templates we specify the master vmSize like this:
+
+  ![nsg image](resources/masterprofile.PNG)
 
 The allowed sizes are obtained from [script using az cli](https://github.com/Azure/acs-engine/blob/master/pkg/acsengine/Get-AzureConstants.py) and can refer to [Azure constant data](https://github.com/Azure/acs-engine/blob/master/pkg/acsengine/azureconst.go)
 
