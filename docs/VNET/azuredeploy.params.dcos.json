@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "masterDnsNamePrefix": {
-      "value": "anhowe0616j"
+      "value": "GEN-UNIQUE"
     },
     "agentDnsNamePrefix": {
-      "value": "appanhowe0616j"
+      "value": "GEN-UNIQUE"
     },
     "agentCount": {
       "value": 2
@@ -14,14 +14,11 @@
     "agentVMSize": {
       "value": "Standard_D2_v2"
     },
+    "agentVnetSubnetID": {
+      "value": "/subscriptions/SUB_ID/resourceGroups/VNET_RG_NAME/providers/Microsoft.Network/virtualNetworks/VNET_NAME/subnets/AGENT_SUBNET_NAME"
+    },
     "linuxAdminUsername": {
       "value": "azureuser"
-    },
-    "windowsAgentAdminUsername": {
-      "value": "azureuser"
-    },
-    "windowsAgentAdminPassword":{
-        "value": "password1234$"
     },
     "orchestratorType": {
       "value": "DCOS"
@@ -32,17 +29,11 @@
     "masterVMSize": {
       "value": "Standard_D2_v2"
     },
+    "masterVnetSubnetID": {
+      "value": "/subscriptions/SUB_ID/resourceGroups/VNET_RG_NAME/providers/Microsoft.Network/virtualNetworks/VNET_NAME/subnets/MASTER_SUBNET_NAME"
+    },
     "sshRSAPublicKey": {
-      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8fhkh3jpHUQsrUIezFB5k4Rq9giJM8G1Cr0u2IRMiqG++nat5hbOr3gODpTA0h11q9bzb6nJtK7NtDzIHx+w3YNIVpcTGLiUEsfUbY53IHg7Nl/p3/gkST3g0R6BSL7Hg45SfyvpH7kwY30MoVHG/6P3go4SKlYoHXlgaaNr3fMwUTIeE9ofvyS3fcr6xxlsoB6luKuEs50h0NGsE4QEnbfSY4Yd/C1ucc3mEw+QFXBIsENHfHfZYrLNHm2L8MXYVmAH8k//5sFs4Migln9GiUgEQUT6uOjowsZyXBbXwfT11og+syPkAq4eqjiC76r0w6faVihdBYVoc/UcyupgH azureuser@linuxvm"
-    },
-    "servicePrincipalClientId": {
-      "value": "dbcd603b-6b0b-4511-8c2c-1dbef18cb452"
-    },
-    "servicePrincipalClientSecret": {
-      "value": "9c7ec6cd-f09f-44a0-9545-30044509a345"
-    },
-    "osType": {
-        "value": "Linux"
+      "value": "GEN-SSH-PUB-KEY"
     }
   }
 }

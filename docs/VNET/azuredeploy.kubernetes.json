@@ -30,12 +30,6 @@
         "description": "The size of the Virtual Machine."
       }
     },
-    "agentVnetSubnetID": {
-      "metadata": {
-        "description": "Sets the vnet subnet of agent pool."
-      },
-      "type": "string"
-    },
     "linuxAdminUsername": {
       "type": "string",
       "defaultValue": "azureuser",
@@ -73,9 +67,9 @@
       },
       "type": "string"
     },
-    "masterVnetSubnetID": {
+    "vnetSubnetID": {
       "metadata": {
-        "description": "Sets the vnet subnet of the master."
+        "description": "Sets the vnet subnet."
       },
       "type": "string"
     },
@@ -105,11 +99,10 @@
     "agentCount":"[parameters('agentCount')]",
     "agentsEndpointDNSNamePrefix":"[parameters('agentDnsNamePrefix')]",
     "agentVMSize":"[parameters('agentVMSize')]",
-    "agentVnetSubnetID":"[parameters('agentVnetSubnetID')]",
     "masterCount":"[parameters('masterCount')]",
     "masterVMSize":"[parameters('masterVMSize')]",
-    "masterVnetSubnetID":"[parameters('masterVnetSubnetID')]",
     "mastersEndpointDNSNamePrefix":"[parameters('masterDnsNamePrefix')]",
+    "vnetSubnetID":"[parameters('vnetSubnetID')]",
     "orchestratorType":"[parameters('orchestratorType')]",
     "sshRSAPublicKey":"[parameters('sshRSAPublicKey')]",
     "servicePrincipalClientId": "[parameters('servicePrincipalClientId')]",
@@ -142,28 +135,18 @@
           "count": "[variables('masterCount')]",
           "dnsPrefix": "[variables('mastersEndpointDNSNamePrefix')]",
           "vmSize": "[variables('masterVMSize')]",
-          "vnetSubnetId": "[variables('masterVnetSubnetID')]",
-          "firstConsecutiveStaticIP": "10.100.0.5"
+          "vnetSubnetId": "[variables('vnetSubnetID')]",
+          "firstConsecutiveStaticIP": "10.239.255.239"
         },
         "agentPoolProfiles": [
           {
-            "name": "agentpublic",
-            "count": 1,
-            "vmSize": "[variables('agentVMSize')]",
-            "vnetSubnetId": "[variables('agentVnetSubnetID')]",
-            "dnsPrefix": "[variables('agentsEndpointDNSNamePrefix')]",
-            "ports": [
-              443,
-              8080
-            ]
-          },
-          {
-            "name": "agentprivate",
+            "name": "agentpools",
             "count": "[variables('agentCount')]",
             "vmSize": "[variables('agentVMSize')]",
-            "vnetSubnetId": "[variables('agentVnetSubnetID')]"
+            "vnetSubnetId": "[variables('vnetSubnetID')]",
+            "dnsPrefix": "[variables('agentsEndpointDNSNamePrefix')]"
           }
-        ]        ,
+        ],
         "linuxProfile": {
           "adminUsername": "[variables('adminUsername')]",
           "ssh": {

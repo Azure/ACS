@@ -147,23 +147,13 @@
         },
         "agentPoolProfiles": [
           {
-            "name": "agentpublic",
-            "count": 1,
-            "vmSize": "[variables('agentVMSize')]",
-            "vnetSubnetId": "[variables('agentVnetSubnetID')]",
-            "dnsPrefix": "[variables('agentsEndpointDNSNamePrefix')]",
-            "ports": [
-              443,
-              8080
-            ]
-          },
-          {
-            "name": "agentprivate",
+            "name": "agentpools",
             "count": "[variables('agentCount')]",
             "vmSize": "[variables('agentVMSize')]",
-            "vnetSubnetId": "[variables('agentVnetSubnetID')]"
+            "vnetSubnetId": "[variables('agentVnetSubnetID')]",
+            "dnsPrefix": "[variables('agentsEndpointDNSNamePrefix')]"
           }
-        ]        ,
+        ],
         "linuxProfile": {
           "adminUsername": "[variables('adminUsername')]",
           "ssh": {
