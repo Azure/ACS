@@ -14,12 +14,6 @@
         "description": "Sets the Domain name prefix for the Agent nodes in a cluster.  The concatenation of the domain name and the regionalized DNS zone make up the fully qualified domain name associated with the public IP address."
       }
     },
-    "osType": {
-      "type": "string",
-      "metadata": {
-        "description": "Sets the OS Type for the Agent nodes in a cluster."
-      }
-    },
     "agentCount": {
       "type": "int",
       "defaultValue": 1,
@@ -99,7 +93,6 @@
     "agentCount":"[parameters('agentCount')]",
     "agentsEndpointDNSNamePrefix":"[parameters('agentDnsNamePrefix')]",
     "agentVMSize":"[parameters('agentVMSize')]",
-    "osType":"[parameters('osType')]",
     "masterCount":"[parameters('masterCount')]",
     "masterVMSize":"[parameters('masterVMSize')]",
     "mastersEndpointDNSNamePrefix":"[parameters('masterDnsNamePrefix')]",
@@ -141,7 +134,6 @@
             "name": "agentpools1",
             "count": "[variables('agentCount')]",
             "vmSize": "[variables('agentVMSize')]",
-            "osType": "[variables('osType')]",
             "storageProfile": "ManagedDisks"
           }
         ]        ,

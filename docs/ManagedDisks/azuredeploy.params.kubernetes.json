@@ -14,9 +14,6 @@
     "agentVMSize": {
       "value": "Standard_D2_v2"
     },
-    "osType": {
-      "value": "Linux"
-    },
     "linuxAdminUsername": {
       "value": "azureuser"
     },

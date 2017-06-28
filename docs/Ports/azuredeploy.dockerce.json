@@ -43,7 +43,6 @@
       "allowedValues": [
         "Kubernetes",
         "DCOS",
-        "Swarm",
         "DockerCE"
       ],
       "metadata": {

@@ -27,7 +27,7 @@
       "value": "Standard_D2_v2"
     },
     "sshRSAPublicKey": {
-      "value": ""
+      "value": "GEN-SSH-PUB-KEY"
     }
   }
 }

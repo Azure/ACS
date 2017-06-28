@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "masterDnsNamePrefix": {
-      "value": "masterdns1"
+      "value": "GEN-UNIQUE"
     },
     "agentDnsNamePrefix": {
-      "value": "agentdns1"
+      "value": "GEN-UNIQUE"
     },
     "agentCount": {
       "value": 2
@@ -28,9 +28,6 @@
     },
     "sshRSAPublicKey": {
       "value": "GEN-SSH-PUB-KEY"
-    },
-    "osType": {
-        "value": "Linux"
     }
   }
 }

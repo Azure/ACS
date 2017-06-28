@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "masterDnsNamePrefix": {
-      "value": "masterdns1"
+      "value": "GEN-UNIQUE"
     },
     "agentDnsNamePrefix": {
-      "value": "agentdns1"
+      "value": "GEN-UNIQUE"
     },
     "agentCount": {
       "value": 2
@@ -16,12 +16,6 @@
     },
     "linuxAdminUsername": {
       "value": "azureuser"
-    },
-    "windowsAgentAdminUsername": {
-      "value": "azureuser"
-    },
-    "windowsAgentAdminPassword":{
-        "value": "password1234$"
     },
     "orchestratorType": {
       "value": "Kubernetes"
@@ -36,13 +30,10 @@
       "value": "GEN-SSH-PUB-KEY"
     },
     "servicePrincipalClientId": {
-      "value": "myServicePrincipalClientID"
+      "value": "REPLACE"
     },
     "servicePrincipalClientSecret": {
-      "value": "myServicePrincipalClientSecret"
-    },
-    "osType": {
-        "value": "Linux"
+      "value": "REPLACE"
     }
   }
 }

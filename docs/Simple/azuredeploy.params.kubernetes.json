@@ -5,6 +5,9 @@
     "masterDnsNamePrefix": {
       "value": "GEN-UNIQUE"
     },
+    "agentDnsNamePrefix": {
+      "value": "GEN-UNIQUE"
+    },
     "agentCount": {
       "value": 2
     },
@@ -24,13 +27,13 @@
       "value": "Standard_D2_v2"
     },
     "sshRSAPublicKey": {
-      "value": ""
+      "value": "GEN-SSH-PUB-KEY"
     },
     "servicePrincipalClientId": {
-      "value": ""
+      "value": "REPLACE"
     },
     "servicePrincipalClientSecret": {
-      "value": ""
+      "value": "REPLACE"
     }
   }
 }
