@@ -14,14 +14,11 @@
     "agentVMSize": {
       "value": "Standard_D2_v2"
     },
-    "osType": {
-      "value": "Linux"
-    },
     "linuxAdminUsername": {
       "value": "azureuser"
     },
     "orchestratorType": {
-      "value": "Kubernetes"
+      "value": "DockerCE"
     },
     "masterCount": {
       "value": 1
@@ -31,12 +28,6 @@
     },
     "sshRSAPublicKey": {
       "value": "GEN-SSH-PUB-KEY"
-    },
-    "servicePrincipalClientId": {
-      "value": " GEN-CLIENT-ID"
-    },
-    "servicePrincipalClientSecret": {
-      "value": " GEN-CLIENT-SECRET"
     }
   }
 }

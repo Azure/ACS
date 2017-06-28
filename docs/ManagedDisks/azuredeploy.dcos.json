@@ -14,12 +14,6 @@
         "description": "Sets the Domain name prefix for the Agent nodes in a cluster.  The concatenation of the domain name and the regionalized DNS zone make up the fully qualified domain name associated with the public IP address."
       }
     },
-    "osType": {
-      "type": "string",
-      "metadata": {
-        "description": "Sets the OS Type for the Agent nodes in a cluster."
-      }
-    },
     "agentCount": {
       "type": "int",
       "defaultValue": 1,
@@ -92,6 +86,17 @@
       },
       "type": "securestring",
       "defaultValue": "n/a"
+    },
+    "osType": {
+      "type": "string",
+      "defaultValue": "Linux",
+      "allowedValues": [
+        "Linux",
+        "Windows"
+      ],
+      "metadata": {
+        "description": "The type of operating system."
+      }
     }
   },
   "variables": {
@@ -99,7 +104,6 @@
     "agentCount":"[parameters('agentCount')]",
     "agentsEndpointDNSNamePrefix":"[parameters('agentDnsNamePrefix')]",
     "agentVMSize":"[parameters('agentVMSize')]",
-    "osType":"[parameters('osType')]",
     "masterCount":"[parameters('masterCount')]",
     "masterVMSize":"[parameters('masterVMSize')]",
     "mastersEndpointDNSNamePrefix":"[parameters('masterDnsNamePrefix')]",
@@ -109,7 +113,7 @@
     "servicePrincipalClientSecret": "[parameters('servicePrincipalClientSecret')]",
     "useServicePrincipalDictionary": {
       "DCOS": 0,
-      "DockerCE": 0,
+      "Swarm": 0,
       "Kubernetes": 1
     },
     "useServicePrincipal": "[variables('useServicePrincipalDictionary')[variables('orchestratorType')]]",
@@ -119,7 +123,8 @@
         "ClientId": "[parameters('servicePrincipalClientId')]",
         "Secret": "[parameters('servicePrincipalClientSecret')]"
       }
-    ]
+    ],
+    "osType": "[parameters('osType')]"
   },
   "resources": [
     {
@@ -138,11 +143,21 @@
         },
         "agentPoolProfiles": [
           {
-            "name": "agentpools1",
+            "name": "agentpublic",
+            "count": 1,
+            "vmSize": "[variables('agentVMSize')]",
+            "dnsPrefix": "[variables('agentsEndpointDNSNamePrefix')]",
+            "osType": "[variables('osType')]",
+            "ports": [
+              443,
+              8080
+            ]
+          },
+          {
+            "name": "agentprivate",
             "count": "[variables('agentCount')]",
             "vmSize": "[variables('agentVMSize')]",
-            "osType": "[variables('osType')]",
-            "storageProfile": "ManagedDisks"
+            "osType": "[variables('osType')]"
           }
         ]        ,
         "linuxProfile": {
