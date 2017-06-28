@@ -127,14 +127,25 @@
         "masterProfile": {
           "count": "[variables('masterCount')]",
           "dnsPrefix": "[variables('mastersEndpointDNSNamePrefix')]",
-          "vmSize": "[variables('masterVMSize')]"
+          "vmSize": "[variables('masterVMSize')]",
+          "storageProfile": "StorageAccount"
         },
         "agentPoolProfiles": [
           {
-            "name": "agentpools",
-            "count": "[variables('agentCount')]",
+            "name": "agentpublic",
+            "count": 1,
             "vmSize": "[variables('agentVMSize')]",
             "dnsPrefix": "[variables('agentsEndpointDNSNamePrefix')]",
+            "ports": [
+              443,
+              8080
+            ],
+            "storageProfile": "StorageAccount"
+          },
+          {
+            "name": "agentprivate",
+            "count": "[variables('agentCount')]",
+            "vmSize": "[variables('agentVMSize')]",
             "storageProfile": "StorageAccount"
           }
         ]        ,
