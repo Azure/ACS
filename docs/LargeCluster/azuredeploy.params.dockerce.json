@@ -1,0 +1,45 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "masterDnsNamePrefix": {
+      "value": "GEN-UNIQUE"
+    },
+    "agentDnsNamePrefix": {
+      "value": "GEN-UNIQUE"
+    },
+    "agentPool1Count": {
+      "value": 3
+    },
+    "agentPool1VMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "agentPool2Count": {
+      "value": 15
+    },
+    "agentPool2VMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "agentPool3Count": {
+      "value": 15
+    },
+    "agentPool3VMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "linuxAdminUsername": {
+      "value": "azureuser"
+    },
+    "orchestratorType": {
+      "value": "DockerCE"
+    },
+    "masterCount": {
+      "value": 1
+    },
+    "masterVMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "sshRSAPublicKey": {
+      "value": "GEN-SSH-PUB-KEY"
+    }
+  }
+}
