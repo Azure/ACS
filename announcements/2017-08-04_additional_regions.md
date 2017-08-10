@@ -2,7 +2,7 @@ The new Azure Container Service is now available in the following regions :
 
 1. UK West
 2. UK South
-3. ~~East US ~~
+3. ~~East US~~
 4. West Central US
 5. West US 2
 6. Canada East
