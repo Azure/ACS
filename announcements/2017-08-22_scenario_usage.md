@@ -19,7 +19,7 @@ West India
 South India
 Central India
 
-### Install Azure CLI v 2.0.12
+### Install Azure CLI v 2.0.14
 ### https://github.com/Azure/azure-cli
 
 #### Login
