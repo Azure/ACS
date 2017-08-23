@@ -9,7 +9,15 @@ The below use cases will be documented on ACOM when the RP V2 is Generally Avail
 Please try them out and provide feedback on the issues section of this repo.
 
 Preview features only available in the following regions:
-
+UK West
+UK South
+West Central US
+West US 2
+Canada East
+Canada Central
+West India
+South India
+Central India
 
 # Install Azure CLI v 2.0.12
 # https://github.com/Azure/azure-cli
