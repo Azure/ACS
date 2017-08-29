@@ -30,6 +30,7 @@ Central India
 
 #### Multiple agent pools with default node size (Standard_D2_V2)*
 *Default – 1 agent pool and 3 nodes*
+
 ` az acs create -n <container-service-name> -g <resource-group-name> -t Kubernetes `
 
 *2 agent pools each with default number of nodes (3)*
@@ -58,7 +59,7 @@ agentpool2 with VM size Standard_A0 and node count 5
 ` az acs create -n portvnetcs -g vnetrg -t kubernetes --agent-vnet-subnet-id "/subscriptions/<subscription-id>/resourceGroups/vnetrg/providers/Microsoft.Network/virtualNetworks/vnet007" --agent-ports 4005 `
 
 #### Storage accounts and Managed Disks
-By default, the ACS RP v2 creates storage accounts for masters and storage accounts for agents, both of which can be changed to use managed disks.
+By default, the ACS RP v2 creates managed disks for masters and storage accounts for agents, both of which can be changed to use managed disks or storage accounts.
 
 *Use managed disks for masters and agents* 
 
