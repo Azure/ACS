@@ -22,4 +22,4 @@ downloaded [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 For the other new regions you can download the nightly build [here](https://github.com/Azure/azure-cli#nightly-builds) 
 
-#### Please ensure that if you choose to create your own Service Principal, you need to have scope set to contributor and scope to the subscription under which you are deploying the ACS cluster
+#### Please ensure that if you choose to create your own Service Principal, you need to have role set to contributor and scope to the subscription under which you are deploying the ACS cluster
