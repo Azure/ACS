@@ -14,6 +14,10 @@ questions regarding the use of the open-source core of ACS.
 
 * **June 28, 2017** -  [ACS UK Public Preview w/ Extended Features](announcements/2017-06-28-acs-uk-public-preview.md)
 
+* **August 04, 2017** - [ACS UK additional regions availability](announcements/2017-08-04_additional_regions.md)
+
+* **August 22, 2017** - [ACS RPv2 Scenario's using the Azure CLI 2.0](announcements/2017-08-22_scenario_usage.md)
+
 ## Code of conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
