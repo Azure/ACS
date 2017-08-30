@@ -2,14 +2,13 @@ The new Azure Container Service is now available in the following regions :
 
 1. UK West
 2. UK South
-3. ~~East US~~
-4. West Central US
-5. West US 2
-6. Canada East
-7. Canada Central
-8. West India
-9. South India
-10. Central India
+3. West Central US
+4. West US 2
+5. Canada East
+6. Canada Central
+7. West India
+8. South India
+9. Central India
 
 The following regions are available under a feature flag and needs subscription access:
 
@@ -23,4 +22,4 @@ downloaded [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 For the other new regions you can download the nightly build [here](https://github.com/Azure/azure-cli#nightly-builds) 
 
-#### Please ensure that if you choose to create your own Service Principal, you need to have scope set to contributor and scope to the subscription under which you are deploying the ACS cluster
+#### Please ensure that if you choose to create your own Service Principal, you need to have role set to contributor and scope to the subscription under which you are deploying the ACS cluster
