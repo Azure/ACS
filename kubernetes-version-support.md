@@ -9,6 +9,38 @@ Version – Format x.y.z (Major.Minor.Patch) Example 1.6.8, 1.7.2, 1.8.0
 Because ACS RP v1 will be phased out soon, adding newer kubernetes releases/versions to RP v1 will be done only with a compelling business need.
 
 The current Release and Version in RPv1 today is v1.6.6
+
+ACS RP v1 is available in the following regions
+
+1) australiasoutheast
+
+2) northeurope 
+
+3) brazilsouth    
+
+4) australiaeast     
+
+5) japaneast    
+
+6) northcentralus    
+
+7) westus  
+
+8) eastasia  
+
+9) eastus2    
+
+10) southcentralus    
+
+11) southeastasia     
+
+12) eastus          
+
+13) westeurope  
+
+14) Centralus
+
+15) japanwest       
 	
 ## ACS ENGINE 
 
@@ -29,3 +61,23 @@ ACS RP v2 automatically chooses the default release in ACS engine. Apart from th
 - Portal. Support only one release (which is the default in ACS Engine) (available today in regions where ACS RPv2 is deployed)
 - CLI. Support all releases supported in ACS Engine through a --–version or –release  flag (NOT available today)
 - Template/REST API. Support all releases supported in ACS Engine as an input parameter (available today in regions where ACS RPv2 is deployed)
+
+ACS RP v2 is avilable in the folloiwng regions-
+
+1) UK West
+
+2) UK South
+
+3) West Central US
+
+4) West US 2
+
+5) Canada East
+
+6) Canada Central
+
+7) West India
+
+8) South India
+
+9) Central India
