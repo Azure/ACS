@@ -58,6 +58,8 @@ agentpool2 with VM size Standard_A0 and node count 5
 
 ` az acs create -n portvnetcs -g vnetrg -t kubernetes --agent-vnet-subnet-id "/subscriptions/<subscription-id>/resourceGroups/vnetrg/providers/Microsoft.Network/virtualNetworks/vnet007" --agent-ports 4005 `
 
+##### When using custom VNETS, the kubernetes route tables and a subnet in the Custom VNET specified are not associated. Please follow documentation [here](../docs/VNET/README.md) to associate them
+
 #### Storage accounts and Managed Disks
 By default, the ACS RP v2 creates managed disks for masters and storage accounts for agents, both of which can be changed to use managed disks or storage accounts.
 
