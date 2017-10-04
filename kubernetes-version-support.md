@@ -50,8 +50,8 @@ The current **default** Release and Version is 1.7.5.
 
 Current supported releases are:
 1. 1.5
-2. 1.6 (default)
-3. 1.7
+2. 1.6 
+3. 1.7 (default)
 
 
 ## ACS RP V2  
