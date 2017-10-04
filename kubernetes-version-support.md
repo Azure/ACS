@@ -46,7 +46,7 @@ ACS RP v1 is available in the following regions
 
 ACS-Engine has moved from supporting versions to supporting releases. For example, previously ACS-Engine customers could choose the 1.5.3 or the 1.6.2 version of Kubernetes in the ACS template. Today, ACS engine allows the user to specify only a release (for example, Release 1.6 or Release 1.7), and then ACS applies a patch that updates that release's version to the most recent stable version.
 
-The current **default** Release and Version is 1.6.6.  
+The current **default** Release and Version is 1.7.5.  
 
 Current supported releases are:
 1. 1.5
