@@ -18,6 +18,8 @@ questions regarding the use of the open-source core of ACS.
 
 * **August 22, 2017** - [ACS RPv2 Scenario's using the Azure CLI 2.0](announcements/2017-08-22_scenario_usage.md)
 
+* **November 9, 2017** - [ACS Kubernetes cluster not responding issue fix](announcements/2017-09-11_Kubernetes-cluster-not-responding-issue-fix.md)
+
 ## Code of conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
