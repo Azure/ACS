@@ -41,9 +41,11 @@ These are potential projects that anyone could pick up to help Kubernetes on Azu
   * **Description**:
     * Build an `azure-ingress-controller` using [Azure's ApplicationGateways](https://azure.microsoft.com/services/application-gateway/)
 2. **Azure Cluster-Autoscale Backend**
-  * **Status**: Not started
+  * **Status**: [Work In Progress](https://github.com/kubernetes/autoscaler/issues/449)
   * **Description**:
     * Build an Azure backend for [`cluster-autoscale`](https://github.com/kubernetes/contrib/tree/master/cluster-autoscaler).
+    * Support for both VMAS and VMSS for acs-engine deployed clusters
+    * Support for aks/acs clusters
 3. **Azure Federation Support**
   * **Status**: Not started
   * **Description**:
@@ -53,7 +55,7 @@ These are potential projects that anyone could pick up to help Kubernetes on Azu
   * **Description**:
     * Implementation of [an Authorization plugin](http://kubernetes.io/docs/admin/authorization/) to compliment [Azure Active Directory OIDC Authentication](https://github.com/colemickens/azure-ad-k8s-oidc-example)
 5. **Azure Virtual Machine Scale Set (VMSS) Support**
-  * **Status**: Not started
+  * **Status**: [Work In Progress](https://github.com/kubernetes/kubernetes/issues/43287)
   * **Description**:
     * The [Azure cloudprovider](https://github.com/kubernetes/kubernetes/tree/master/pkg/cloudprovider/providers/azure) only supports "loose" (non-VMSS) VMs. It should also support VMSS.
 5. **Miscellaneous**
